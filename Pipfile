@@ -6,8 +6,8 @@ name = "pypi"
 [packages]
 gspread = "*"
 oauth2client = "*"
-fastapi = "*"
-uvicorn = "*"
+flask = "*"
+flask-ngrok = "*"
 
 [dev-packages]
 
