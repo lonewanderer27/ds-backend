@@ -2,6 +2,7 @@ import os
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from pprint import pprint
 
 # Authorize thyself
@@ -21,6 +22,8 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict({
 client = gspread.authorize(creds)
 
 app = Flask(__name__)
+CORS(app)
+
 
 @app.get("/")
 def fetch_clients():
