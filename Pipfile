@@ -8,6 +8,7 @@ gspread = "*"
 oauth2client = "*"
 flask = "*"
 flask-ngrok = "*"
+flask-cors = "*"
 
 [dev-packages]
 
